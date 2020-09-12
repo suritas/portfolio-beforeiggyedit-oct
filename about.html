@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--HEAD: NAME OF PAGE AND REFERENCE TO CSS STYLESHEET-->
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+				<script async src="https://www.googletagmanager.com/gtag/js?id=UA-160395307-1"></script>
+				<script>
+				  window.dataLayer = window.dataLayer || [];
+				  function gtag(){dataLayer.push(arguments);}
+				  gtag('js', new Date());
+				  gtag('config', 'UA-160395307-1');
+				</script>
+
+		<!-- Other Head content -->
+		<meta charset="UTF-8">
+		<title>About</title>
+		<link rel="stylesheet" type="text/css" href="css/html5reset.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Raleway:200&display=swap" rel="stylesheet">
+
+		<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+		<link rel="shortcut icon" type="image/png" href=images/starfish2.png>		<link rel="shortcut icon" type="image/png" href=images/starfish2.png>
+	</head>
+	<!-- BODY & NAV -->
+		<a id="top"></a><!-- for the button to go to top -->
+		<body>
+			<header>
+				<button id="backtotopbutton">
+					<a href="#top">
+						<img src="images/uparrow.svg" alt="uparrow"/>
+					</a>
+				</button>
+			<div class="skip">
+				<a href="#main">Skip to Main Content</a>
+			</div>
+			<img src="images/starfish3.png" alt="logo" id = "logo">
+			<h1 id = "suritaux">SURITA SPIGNER</h1>
+			<nav id = "nav">
+				<ul>
+					<li class="index"><a  href = index.html> Projects </a></li>
+					<li class="resume"><a href = resume.html> Resume </a></li>
+					<li class="about"><a class="current" href = about.html> About </a></li>
+				</ul>
+			</nav>
+		</header>
+		<main id="main">
+			<div id = "about-container">
+				<div id = "about-text">
+					<img src="images/profilepic1.jpg" alt="surita's profile picture" id = "profile-pic-before">
+					<h2>HI, I’M SURITA</h2>
+					<p>Thanks for visiting my portfolio!<br>
+					A little about me: I recently recieved my Masters in Information at the University of Michigan, where my focus was in on Human Computer Interaction & User Experience. I currently live in Seattle, WA where I work remotely as a UX Intern at Evva Health Inc.  I have a passion for technical and educational writing, and am curious how language can be combined with UX Methodology to improve discoverability particularly for mobile products. </p>
+					<br>
+					<h2>A DIFFERENT APPROACH</h2>
+					<p>My background in scientific research and technical education taught me to communicate complex processes with precision and care. In UI, I combine affordances and signifiers with concise language to guide the user. In practice I frequently use information architecture, qualitative analysis, user testing, and surveys to inform my design solutions. <br>
+					When I am not working, you can find me at the beach, Trader Joe's, or enjoying the Pacific Northwest's sights.
+					</p>
+				</div> <!-- abouttext closer div -->
+				<img src="images/profilepic1.jpg" alt="surita's profile picture" id = "profile-pic-after">
+			</div> <!-- about container closer div -->
+			<div class = "quotes">
+				<div class = "recco-quote">
+					<p>"I would strongly recommend Surita Spigner for any position that entails Product Research, Design, or Strategy...
+					<br>
+					Her innovative designs and thoughtful insights have had a positive impact on our product design. Surita's analysis helped to uncover a significant number of features of interest to our customer base and which ones to prioritize as we were thinking about our next product release. <span class="recco-bold">Surita will be a critical asset to any team that is seeking to accelerate their User research or User Experience (UX) design, especially when it comes to spearheading qualitative and quantitative research and communicating or translating research results into designs centered around the user."</span>
+					</p>
+					<p class="recco-person">Carl Hanna, Ph.D., Co-Founder & CEO of Evva Health</p>
+				</div> <!-- reccomendation quote closer div -->
+				<div class = "recco-quote">
+					<p>
+					<span class="recco-bold"> "Surita championed UX/UI analysis with her critical thinking about various options and provided crucial feedback about functionality, mobile app workflows, and content labeling that were used for redesign of the MVP.</span> She has a deep passion for healthcare and latest interfaces, which shows in her ability to embed design thinking in all conversations and her proactive attitude to even the smallest of objectives.Thank you Surita!"
+					</p>
+					<p class="recco-person">Saurabh Vyas M.D., Healthcare Leader - AI and Digital Health</p>
+
+				</div> <!-- reccomendation quote closer div -->
+			</div> 	<!-- quotes closer div -->
+			<h4> Contact me!</h4>
+			<!-- contact form -->
+			<div class="form-container">
+				<form action="https://formspree.io/xayoando" method="POST">
+
+<!-- name -->
+							<label for="name">Name</label>
+							<input type="text" name="name" placeholder="Full Name..." id="name"/>
+<!-- email -->
+							<label for="email" id="email-label">Email</label>
+							<input type="email" name="_replyto" placeholder="Your Email..." id="email"/>
+
+<!-- subject -->
+							<label for="subject">Subject</label>
+							<input type="text" name="subject" placeholder="Subject..." id="subject"/>
+<!-- Message -->
+							<label for="message">Message</label>
+							<textarea name="message" placeholder="Your message here.." id="message"></textarea>
+
+						<input type="submit" value="Send" id= "submit-button"/>
+
+				</form>
+			</div>
+		</main>
+		<footer>
+			<p>Surita Spigner Portfolio 2020</p>
+			<div class="mobilefooter"> Current Display: Mobile</div>
+			<div class="tabletfooter"> Current Display: Tablet</div>
+			<div class="desktopfooter"> Current Display: Desktop</div>
+		</footer>
+	</body>
+</html>

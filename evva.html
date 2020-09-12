@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--HEAD: NAME OF PAGE AND REFERENCE TO CSS STYLESHEET-->
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+				<script async src="https://www.googletagmanager.com/gtag/js?id=UA-160395307-1"></script>
+				<script>
+				  window.dataLayer = window.dataLayer || [];
+				  function gtag(){dataLayer.push(arguments);}
+				  gtag('js', new Date());
+				  gtag('config', 'UA-160395307-1');
+				</script>
+
+		<!-- Other Head content -->
+		<meta charset="UTF-8">
+		<title>Process</title>
+		<link rel="stylesheet" type="text/css" href="css/html5reset.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Raleway:200&display=swap" rel="stylesheet">
+
+		<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+		<link rel="shortcut icon" type="image/png" href=images/starfish2.png>		<link rel="shortcut icon" type="image/png" href=images/starfish2.png>
+	</head>
+	<!-- BODY & NAV -->
+		<a id="top"></a><!-- for the button to go to top -->
+		<body>
+			<header>
+				<button id="backtotopbutton">
+					<a href="#top">
+						<img src="images/uparrow.svg" alt="uparrow"/>
+					</a>
+				</button>
+			<div class="skip">
+				<a href="#main">Skip to Main Content</a>
+			</div>
+			<img src="images/starfish3.png" alt="logo" id = "logo">
+			<h1 id = "suritaux">SURITA SPIGNER</h1>
+			<nav id = "nav">
+				<ul>
+					<li class="index"><a class="current" href = index.html> Projects </a></li>
+					<li class="resume"><a href = resume.html> Resume </a></li>
+					<li class="about"><a href = about.html> About </a></li>
+				</ul>
+			</nav>
+		</header>
+<!-- MAIN:PAGE CONTENTS -->
+		<main>
+<!-- <p id="main" tabindex="-1"> -->
+
+			<!-- <img src="images/cnbc-logo.png" alt="cnbc logo" id = "toplogo"> -->
+			<div class="top-flexcontainer">
+				<div class="projecttitle-before">CNBC iOS Redesign</div>
+				<img id = "cnbcphone" src="images/iphone_x-evva.png" alt="phone with screen of evva app prototype"/>
+        <div class="projecttitle-after">
+          <span style= "color: purple;
+                      margin-right: 7vw;
+                      margin-left: 0px;
+                      text-align: right;"
+              class="projecttitle-after">Evva Health</span>
+          <div class="projecttitle-after">Product Feature Research</div>
+        </div>
+			</div>
+<!-- Text Effect Citation: http://nimbupani.com/using-background-clip-for-text-with-css-fallback.html -->
+			<div class="top-description">
+        <p> The following details research & design from a UX internship with Evva Health, a start-up offering caregiver & healthcare provider support through a mobile app.
+          <br> My research was used to determine which product features to offer based on their importance to users.
+				</p>
+			</div>
+			<div class="container">
+				<div class="step1"> 1 </div>
+					<div class = "stepcontent stepcontentborder">
+						<div class = "steptitle">RESEARCH QUESTION(S)</div>
+						<p>An initial scoping session illuminated the concern:</p>
+            <br>
+            <p id = "researchq1"> What do providers expect from caregiving support apps?</p>
+            <br>
+            <p> By modifying this into two questions, I applied Comparative Analysis and User Research to answer them respectively. </p>
+            <br>
+            <p id = "researchq2">
+            What features do our competitors offer?
+            <br>+<br>
+            Which features are most important to caregivers?
+            </p>
+            <br>
+					</div>
+					<!-- CITATION: How to add captions to flex images:https://stackoverflow.com/questions/28949683/get-image-and-caption-into-one-flex-item -->
+				<div class="step2"> 2 </div>
+					<div class = "stepcontent stepcontentborder">
+						<div class = "steptitle">COMPETITOR RESEARCH</div>
+						<p>By reviewing caregiver support blogs, app store reviews, and healthcare industy websites I identified 17 applications marketed towards caregivers, providers, and/or patients monitoring their health symptoms and medications. <br>
+              <img class="step-fleximage"
+              style='box-shadow: none;'
+              src="images/5comparativelogos.png" alt="Logos of 5 companies for comparative analysis"/>
+            <br>
+            I categorized by competitor type (Direct, Indirect	Partial, Parallel, or Analogous) and narrowed down to four direct and one parallel competitor. The parallel competitor was included since it was to be released in the same region and timeframe as Evva's app.
+						</p>
+					</div>
+				<div class="step3"> 3 </div>
+					<div class = "stepcontent stepcontentborder">
+						<div class = "steptitle">COMPARATIVE ANALYSIS</div>
+							<div id = "dr-container">
+									<div id = "dr-text-before">
+									<p> I identified over 200 features to conduct a comparative analysis regarding:</p>
+			                <ul>
+			                  <li>Security</li>
+			                  <li>Patient Setup</li>
+			                  <li>Homepage Display</li>
+			                  <li>Tasklist UI</li>
+			                  <li>Medications</li>
+			                  <li>Physical Assessment</li>
+			                  <li>Mental Assessment</li>
+			                  <li>Bluetooth Medical Devices</li>
+			                  <li>Caregiver Support</li>
+			                  <li>Care Network Messaging</li>
+			                  <li>Health Reporting</li>
+			                  <li>Patient Documents</li>
+			                  <li>Emergency</li>
+			                  <li> UI, Display, & Gestures</li>
+			                </ul>
+			              <p>This analysis illuminated the features most consistently offered amongst competitors and expected by users, thereby answering the first question.
+			              </p>
+								</div> <!--text closer div -->
+								<img src="images/evvatable.png" alt="Portion of table for comparative analysis of app competitors" id = "dr-pic-after">
+							</div> <!-- small container closer div -->
+					</div>
+					<div class="step4"> 4 </div>
+					<div class = "stepcontent stepcontentborder">
+						<div class = "steptitle">FEATURE PREFERENCE SURVEY</div>
+							<div id = "dr-container">
+								<div id = "dr-text-before">
+										<p>
+										To answer the second question, I administered a preference survey to health care providers using Qualtrics. <br>Multiple choice questions collected data on respondents' work background including what environments and populations they served. <br>
+										Max-Diff questions allowed respondents to rank each feature's importance to their professional use.<br>
+										Comments allowed for additional feedback.
+										</p>
+								</div> <!--text closer div -->
+								<!-- <img src="images/balloticon.png" alt="survey ballot icon" id = "dr-pic-after"> -->
+							</div> <!-- small container closer div -->
+					</div>
+						<div class="step5"> 5 </div>
+							<div class = "stepcontent stepcontentborder">
+								<div class = "steptitle">VISUALIZING FINDINGS</div>
+									<p>The most impactful outcome of my research was 45 features I identified as "most important" to users.</p>
+									<img class="step-fleximage"
+									style='box-shadow: none;'
+									src="images/45featurestable.png" alt="45 app features ranked most important by users"/>
+									<p>Of these features, I also highlighted those which we would offer exclusively.</p>
+									<img class="step-fleximage"
+									style='box-shadow: none;'
+									src="images/featurestable.png" alt="most imporant ranked app features that are exclusively offered by Evva Inc."/>
+									<p><br>And, how our competitors compared in their offering of these highly ranked features.<br><br></p>
+									<img class="step-fleximage"
+									style='box-shadow: none;'
+									src="images/featuresgraph.png" alt="visual comparison of offerings by evva and its competitors"/>
+							</div>
+							<div class="step6"> 6 </div>
+								<div class = "stepcontent stepcontentborder">
+									<div class = "steptitle">PROTOTYPES</div>
+											<p>Below are prototypes for 2 of the 45 features I identified as most important through my research.<br> Prototypes were created using Figma and Adobe Illustrator.
+											</p>
+											<p id = "feature-title">Feature 1: Indicate Incomplete, Late, or Skipped status of Medications"</p>
+											<br>
+											<img class= "threephones" src="images/3evvaphones.png" alt="late incomplete and skipped phone mockups for evva app prototype"/>
+											<p id = "feature-title">Feature 2: List Side Effects & Drug Interaction Warnings of Medications
+											</p>
+											<img class= "miniphonegif" src="videos/evva_prototype_gif.gif" alt="gif demo of evva prototype for side effect and drug interactions"/>
+				           </div><!-- div closer for step 6-->
+				</div> <!-- all steps containercloser -->
+		</main>
+		<footer>
+			<p>Surita Spigner Portfolio 2020</p>
+			<div class="mobilefooter"> Current Display: Mobile</div>
+			<div class="tabletfooter"> Current Display: Tablet</div>
+			<div class="desktopfooter"> Current Display: Desktop</div>
+		</footer>
+	</body>
+</html>
