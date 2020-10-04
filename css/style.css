@@ -14,6 +14,7 @@
 --font1: 'Montserrat', sans-serif;
 --font2: 'Raleway', sans-serif;
 --font3: 'DM Serif Display', serif;
+--fontcode:'Cutive Mono', serif;
 }
 /*Citation for root: use: https://www.w3schools.com/css/css3_variables.asp */
 
@@ -66,8 +67,6 @@ html{
     background-image:url(../images/uparrowbackground.svg);
     background-repeat: no-repeat;
 }
-
-
 
 /* BODY & sections*/
 body{
@@ -152,7 +151,8 @@ main{
 }
 #resumelogo{
   height:20px;
-  padding-top: 0px;
+  margin-top: 50px;
+  margin-bottom:0px;
 }
 
 #suritaux{
@@ -227,7 +227,7 @@ border: 1px solid var(--transparentcolor2);
   color: var(--color2);
   font-weight: bold;
   font-size: 30px;
-  padding-top:30px;
+  padding-top:50px;
   letter-spacing: 1.7px;
   line-height: 1.7;
 }
@@ -272,7 +272,10 @@ margin: 10px;
 width: 100px;
 height:100px;
 }
-
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
 .gallery a:hover{
 border: 10px var(--colordark) solid;
 transition: .5s ease-in;
@@ -307,7 +310,7 @@ text-align: center;
 
 /* --------------------------------WELCOME ONLY--------------------------------------- */
 
-#image1, #image2, #image3, #image4 {
+#image1, #image2, #image3, #image4, #image5, #image6 {
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
@@ -321,19 +324,16 @@ background-image: url(../images/evva-logo.png);
 #image3{
 background-image: url(../images/traveler-logo.png);
 }
-/* #image3{
-background-image: url(../images/amazon-logo.png);
-}
 #image4{
-background-image: url(../images/sas-logo.png);
-} */
-/* #image5{
-background-image: url(../images/fish5.jpg);
+background-image: url(../images/fsslogo.png);
+}
+#image5{
+background-image: url(../images/justfutureslogo2.png);
 }
 #image6{
-background-image: url(../images/fish6.jpg);
+background-image: url(../images/amazon-logo.png);
 }
-#image7{
+/* #image7{
 background-image: url(../images/fish7.jpg);
 }
 #image8{
@@ -389,7 +389,20 @@ margin: 30px;
 }
 
 /* PROJECT TITLE */
-.projecttitle-before, .projecttitle-after {
+.projecttitle-regular{
+  width: 100%;
+  align-self: center;
+  text-align: left;
+  color: var(--colordark);
+  font-family: var(--font1);
+  font-size:3vh;
+  background-color: white;
+  text-transform: uppercase;
+  margin-top: 50px;
+}
+
+
+.projecttitle-before, .projecttitle-after{
   width: 100%;
   align-self: center;
   font-size: 4vw;
@@ -398,9 +411,8 @@ margin: 30px;
   position: relative;
   font-family: var(--font2);
   /* display: inline-block; */
-  margin-top: 20px;
+  margin-top: 50px;
   margin-bottom: 20px;
-  padding-bottom:10px;
   text-align: center;      /* MOBILEONLY */
   /* Color fallback */
   color: var(--colordark);
@@ -440,23 +452,31 @@ margin: 30px;
 
 
 /* DESCRIPTION BELOW CONTAINER */
-.top-description{
-color: var(--colordark); /* make contrast */
-background-color: white; /* make contrast */
-font-family: var(--font2);
-font-size: 16px;
-text-align: center;
-padding-top:10px;
-padding-bottom:20px;
+.top-description,.top-description-left{
+  color: var(--colordark); /* make contrast */
+  background-color: white; /* make contrast */
+  font-family: var(--font2);
+  font-size: 16px;
+  line-height: 1.7em;
+  text-align: center;
+  font-style: italic;
+  margin-top:40px;
+  margin-bottom: 55px;
+}
+.top-description-left{
+  text-align: left;
+  margin-left:30px;
+  margin-top:0px;
+  margin-bottom: 80px;
 }
 
 /* STEPS */
 .container{
-display: grid;
-grid-column: 1fr;
-grid-row-gap: 10px;
-padding-top:25px;
-padding-bottom:15px;
+  display: grid;
+  grid-column: 1fr;
+  grid-row-gap: 10px;
+  padding-top:25px;
+  padding-bottom:15px;
 }
 .stepcontent{
   padding:50px;
@@ -465,7 +485,7 @@ padding-bottom:15px;
 }
 .stepcontent p {
   padding-left: 20px;
-  padding-top: 20px;
+  padding-top: 10px;
   font-size: 16px;
 }
 /* step content flexed with image */
@@ -481,7 +501,7 @@ padding-bottom:15px;
 }
 
 .step-fleximage{
-  box-shadow: 0 4px 8px 0 grey;
+  /* box-shadow: 0 4px 8px 0 grey; */
   display: block;
   margin-top: 15px;
   margin-left: auto;
@@ -506,6 +526,36 @@ justify-content: left;
   /* margin-left: auto;
   margin-right: auto; */
   width: 10vw;
+}
+
+.bold{
+  font-weight: bold;
+  color: var(--colordark);
+}
+/* scope*/
+#sc-container, #sc-inner-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#sc-pic-before, .affin-pic-before, .amz-pic-before{
+  width:100%;
+  align-self: center;
+  margin:20px;
+}
+#sc-text-before{
+  width:100%;
+  margin:20px;
+}
+
+#sc-text-before ul li, #sc-text-before ol li{
+  font-family: var(--font1);
+  font-weight: 300;
+  font-style: normal;
+  line-height: 2em;
+  font-size: 16px;
+  text-decoration: none;
+  letter-spacing: .06em;
 }
 
 /* design reqs*/
@@ -558,30 +608,41 @@ justify-content: left;
 
 
 
-#quote {
+#quote, #quote-fss, #quote-amazon {
+  font-family: var(--font2);
   font-style: italic;
   font-weight: bold;
-  color: var(--color1);
+  color: darkgrey;
   text-align: center;
   padding-left: 30px;
   padding-top: 20px;
   font-size: 20px;
 }
-#researchq1{
+#quote-fss{
+  text-align: left;
+  padding:0px;
+  padding-left: 70px;
+  padding-top: 10px;
+}
+#quote-amazon{
+  font-family: var(--fontcode);
+  text-align: left;
+  padding:0px;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+#researchq1, #researchq2{
+  font-family: var(--font2);
   font-weight: bold;
   color: lightgrey;
+  line-height: 2em;
   text-align: center;
   padding-left: 30px;
   padding-top: 20px;
   font-size: 25px;
 }
 #researchq2{
-  font-weight: bold;
   color: darkgrey;
-  text-align: center;
-  padding-left: 30px;
-  padding-top: 20px;
-  font-size: 25px;
 }
 
 #feature-title{
@@ -638,7 +699,7 @@ justify-content: left;
 
 
 /* combo of bullet and bold top part */
-.stepcontent ul{
+.stepcontent ul, .stepcontent ol{
   padding-left: 80px;
   line-height: normal;
   font-size: 13px;
@@ -658,13 +719,11 @@ justify-content: left;
   /* Citation:transparent border webkit:https://stackoverflow.com/questions/4062001/can-you-set-a-border-opacity-in-css */
 }
 .steptitle{
-/* grid-column: 2 / span 2; */
 color:var(--color1);
-/* height: 100%; */
 font-size:3vh;
+font-family: var(--font1);
 background-color: white;
 font-weight: bold;
-/* padding:30px 30px 0px 30px; */
 text-transform: uppercase;
 }
 .step1, .step2, .step3, .step4, .step5, .step6, .step7, .step8{
@@ -685,7 +744,8 @@ text-transform: uppercase;
   margin-right: auto;
   width: 10vw;
   height: 20vw;
-  padding: 20px;
+  margin-top: 70px;
+  margin-bottom: 40px;
 }
 /* FLIPCARD IMAGES (height MUST STAY SAME AS FLIPCARD) */
 .livetv, .sec15, .cc, .ybar{
@@ -746,6 +806,25 @@ backface-visibility: hidden;
 }
 /* Flipcard Citation:https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_flip_card */
 /* FLIPCARD RESIZE */
+/* --------------------------------FSS ONLY--------------------------------------- */
+
+
+
+
+
+/* --------------------------------MSC ONLY--------------------------------------- */
+
+
+
+
+
+
+
+/* --------------------------------AMAZON ONLY--------------------------------------- */
+
+
+
+
 
 
 /* --------------------------------RESUME ONLY--------------------------------------- */
@@ -758,10 +837,10 @@ backface-visibility: hidden;
 .minititle-resume,.minititle-resume a:visited, .minititle-resume a:link {
   font-size: 16px;
   text-align: center;
-  padding-bottom: 30px;
+  margin-top: 75px;
+  margin-bottom: 50px;
   text-decoration: none;
   color:var(--lightblue);
-  margin-top: 0px;
   line-height: .7em;
   font-weight:bold;
 }
@@ -1289,7 +1368,7 @@ font-size:1vw;
 
 
 
-/* design reqs*/
+/* design reqs desktop*/
 #dr-container{
   display: flex;
   flex-direction: row;
@@ -1302,7 +1381,42 @@ font-size:1vw;
 #dr-text-before{
   width:100%;
   font-size: 13px;
+  align-self: flex-start;
 }
+
+/* scope desktop*/
+#sc-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#sc-container-col{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#sc-inner-container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#sc-pic-before{
+  width:400px;
+  align-self:center;
+}
+.affin-pic-before{
+  width:400px;
+  align-self:center;
+}
+.amz-pic-before{
+  width:500px;
+  align-self:center;
+}
+#sc-text-before{
+  width:100%;
+  align-self: flex-start;
+}
+
 
 }/* closing large desktop bracket */
 
