@@ -82,10 +82,7 @@ body{
   text-decoration: none;
   letter-spacing: .06em;
 }
-header{
-  margin: 30px;
-  padding: 10px;
-}
+
 main{
   margin: 30px;
   min-height: calc(100vh - 285px);
@@ -168,6 +165,9 @@ header{
   display:flex;
   flex-direction: column;
   align-items:center;
+  position: relative;
+  margin: 30px;
+  padding: 10px;
 }
 nav a{
   font-size:11px;
@@ -1031,6 +1031,8 @@ input[type=submit]:active{
 }
 /*###################################################################################################################TABLET##############################################################################################################*/
 
+
+
 /* ---------------------------PROCESS TABLET---------------------------------------------------------- */
 @media all and (min-width: 800px){
   /* top container: row */
@@ -1196,6 +1198,14 @@ font-size:10px;
 /*################ SMALL DESKTOP#############################################*/
 @media all and (min-width: 1000px){
 
+/* sticky header */
+
+header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 /* rolling logo ANIMATION */
 @-webkit-keyframes roll {
 from {transform:rotate(0deg); left:-999px; top:-15px;}
@@ -1321,12 +1331,7 @@ input[type=submit]{
 }
 
 /* ---------------------------NAV & FOOTER---------------------------------------------------------- */
-/* NAV */
-header{
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-}
+
 nav{
 /* text-align: right; */
 padding: 10px 0px;
